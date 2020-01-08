@@ -1,5 +1,10 @@
-function sayHello(name){
-  console.log(" Hello " + name);
-}
-
-sayHello("node js");
+const express = require('express')
+const app = express()
+ 
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
+ 
+app.listen(3000)
+	
+console.log('Server is now up!!')
